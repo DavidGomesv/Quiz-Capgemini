@@ -1,0 +1,84 @@
+[
+{
+    "type": "header",
+    "version": "5.2.0",
+    "comment": "Export to JSON plugin for PHPMyAdmin"
+},
+{
+    "type": "database",
+    "name": "bdangular"
+},
+{
+    "type": "table",
+    "name": "modulos",
+    "database": "bdangular",
+    "data": 
+[
+{
+    "idModulo": "1",
+    "nomeModulo": "Introdução a Lógica de Programação"
+},
+{
+    "idModulo": "2",
+    "nomeModulo": "Lógica de Programação e Algoritimos I"
+},
+{
+    "idModulo": "3",
+    "nomeModulo": "Lógica de Programação e Algoritimos II"
+},
+{
+    "idModulo": "4",
+    "nomeModulo": "Lógica de Programação e Algoritimos  III"
+},
+{
+    "idModulo": "5",
+    "nomeModulo": "Fundamentos de HTML5 I"
+},
+{
+    "idModulo": "6",
+    "nomeModulo": "Fundamentos de HTML5 II"
+},
+{
+    "idModulo": "7",
+    "nomeModulo": "Fundamentos de HTML5 III"
+},
+{
+    "idModulo": "8",
+    "nomeModulo": "Fundamentos em CSS"
+},
+{
+    "idModulo": "9",
+    "nomeModulo": "JavaScrip e Jquery"
+},
+{
+    "idModulo": "10",
+    "nomeModulo": "Angular"
+},
+{
+    "idModulo": "11",
+    "nomeModulo": "APIs com Angular"
+},
+{
+    "idModulo": "12",
+    "nomeModulo": "Java Fundamentos"
+},
+{
+    "idModulo": "13",
+    "nomeModulo": "Linguagem de Programação em Java"
+},
+{
+    "idModulo": "14",
+    "nomeModulo": "Java Web"
+},
+{
+    "idModulo": "15",
+    "nomeModulo": "HTML Avançado"
+},
+{
+    "idModulo": "16",
+    "nomeModulo": "CSS Avançado"
+}
+]
+
+}
+]

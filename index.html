@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="scripts/basedados.js"></script>
+    <script src="scripts/script.js"></script>
+
+    <title>QUIZ</title>
+  </head>
+  <body onload="popularSelect()">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="assets/logo-capgemini.png"
+                alt=""
+                width="35"
+                class="d-inline-block align-text-top"
+              />
+              <span style="color: #0070ad">QUIZ</span> Start by Capgemini</a
+            >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="web/quiz.html">Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="web/sobre.html">Sobre</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- #endregion -->
+
+    <!-- #region -->
+    <main>
+      <!-- #region -->
+      <section
+        id="container-selecao-modulo"
+        style="margin-top: 20px; margin-bottom: 20px; text-align: center"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="text-center text-dark">
+                Por favor escolha o módulo da Trilha Java.
+              </h1>
+              <hr />
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label style="font-size: 18px" class="text-dark"
+                    >Módulo:</label
+                  >
+                  <select
+                    class="form-group"
+                    id="selectModulos"
+                    onchange="show(this)"
+                    style="margin-left: 10px"
+                  >
+                    <option value="">-- Selecione o Módulo --</option>
+                  </select>
+                </div>
+
+                <div class="card mt-5 col-md-12">
+                  <div class="card-body">
+                    <h4 class="card-title text-dark" id="moduloSelecionado">
+                      Módulo
+                    </h4>
+                    <hr />
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      <span class="text-dark">Total de Questões</span> 10
+                    </h6>
+                    <hr />
+                    <p>Clique no botão para começar a avaliação</p>
+                    <div class="botao-comecar">
+                      <button class="btn btn-primary" onclick="preencherQuiz()">
+                        Começar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- #endregion -->
+
+    <!-- #region -->
+    <footer></footer>
+    <!-- #endregion -->
+
+    <!-- #region JavaScript Bundle with Popper-->
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/basedados.js"></script>
+    <script src="../scripts/script.js"></script>
+
+    <title>QUIZ</title>
+  </head>
+  <body onload="preencherQuiz()">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../assets/logo-capgemini.png"
+                alt=""
+                width="35"
+                class="d-inline-block align-text-top"
+              />
+              <span style="color: #0070ad">QUIZ</span> Start by Capgemini</a
+            >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Início</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="quiz.html">Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- #endregion -->
+
+    <!-- #region -->
+    
+      <!-- #endregion -->
+      <!-- #region -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="quix-box custom-box">
+            <div class="question-number">
+              Questão de Número: <span id="numQuestao">1</span>/10 <span style="float: right">10:50</span>
+            </div>
+            <div class="question-text" id="questao" style="text-align: justify">
+              questao
+            </div>
+            <div class="option-container">
+              <div class="option" style="text-align: justify" id="A">
+                Minha opção A
+              </div>
+              <div class="option" style="text-align: justify" id="B">
+                Minha opção B
+              </div>
+              <div class="option" style="text-align: justify" id="C">
+                Minha opção C
+              </div>
+              <div class="option" style="text-align: justify" id="D">
+                Minha opção D
+              </div>
+            </div>
+
+            <div style="width: 100%; text-align: center">
+              <button style="margin-bottom: 10px; background-color: #0070ad; color: white;" type="button" class="btn" onclick="confirmarResposta()">
+                Confirmar
+              </button>
+            </div>
+
+            <div class="answers-indicator">
+              <div id="1"></div>
+              <div id="2"></div>
+              <div id="3"></div>
+              <div id="4"></div>
+              <div id="5"></div>
+              <div id="6"></div>
+              <div id="7"></div>
+              <div id="8"></div>
+              <div id="9"></div>
+              <div id="10"></div>
+            </div>
+          </div>
+
+          <div class="result-box custom-box" style="height: 100vh">
+            <h1>Resultado do Quiz</h1>
+            <table>
+              <tr>
+                <td>Total de Questões</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Total de Acertos</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Total de Erros</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Percentual</td>
+                <td>80%</td>
+              </tr>
+              <tr>
+                <td>Tempo</td>
+                <td>08:15</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- #endregion -->
+
+    <!-- #region -->
+    <footer></footer>
+    <!-- #endregion -->
+
+    <!-- #region -->
+  </body>
+</html>
